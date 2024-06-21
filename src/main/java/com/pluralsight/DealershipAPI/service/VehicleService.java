@@ -44,7 +44,11 @@ public class VehicleService {
         newVehicle.setVIN(rs.getInt("VIN"));
         newVehicle.setVehicleMake(rs.getString("VehicleMake"));
         newVehicle.setVehicleModel(rs.getString("VehicleModel"));
-            return newVehicle;
+        return newVehicle;
     }
 
+    public List<Vehicle> getVehicleByVIN(int vin) {
+        // return vehicleDAO.
+        return List.of();
+    }
 }
