@@ -10,11 +10,11 @@ import java.sql.*;
 @Component
 public class VehicleService {
 
-    private VehicleDAO vehicleDAO = null;
+    private final VehicleDAO vehicleDAO;
 
     @Autowired
-    public VehicleService(VehicleDAO VehicleDAOImpl) {
-        this.vehicleDAO = vehicleDAO;
+    public VehicleService(VehicleDAO vehicleDAOImpl) {
+        this.vehicleDAO = vehicleDAOImpl;
     }
 
     public List<Vehicle> getAllVehicles() {

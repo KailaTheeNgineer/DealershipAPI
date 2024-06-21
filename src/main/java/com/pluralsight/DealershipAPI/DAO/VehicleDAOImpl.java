@@ -3,12 +3,14 @@ package com.pluralsight.DealershipAPI.DAO;
 import com.pluralsight.DealershipAPI.model.Vehicle;
 import com.pluralsight.DealershipAPI.service.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class VehicleDAOImpl implements VehicleDAO {
 
     private DataSource dataSource;
